@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN-API</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        input, button, textarea { display: block; width: 80%; margin: 10px auto; padding: 10px; }
+        textarea { height: 150px; }
+    </style>
+</head>
+<body>
+    <h2>GREEN-API Test</h2>
+    
+    <input type="text" id="idInstance" placeholder="idInstance">
+    <input type="text" id="apiToken" placeholder="ApiTokenInstance">
+    
+    <button onclick="getSettings()">getSettings</button>
+    <button onclick="getStateInstance()">getStateInstance</button>
+
+    <input type="text" id="phoneNumber" placeholder="Номер получателя (+77777777)">
+    <textarea id="messageText" placeholder="Введите сообщение"></textarea>
+    <button onclick="sendMessage()">sendMessage</button>
+
+    <textarea id="response" readonly placeholder="Ответ сервера"></textarea>
+
+    <script src="script.js"></script>
+</body>
+</html>
